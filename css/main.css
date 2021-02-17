@@ -166,5 +166,58 @@ p {
     margin: 2em 0 0;
     padding: 2em;
     border-radius: 0.5em;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  form {
+    display: flex;
+  }
+  .form-left {
+    width: 70%;
+  }
+  label {
+    margin: 0;
+  }
+  input[type="button"] {
+    height: fit-content;
+    font-size: 1.1em;
+    margin-left: 1em;
+    margin-top: 1.2em;
+    padding: 0.7em 0;
+    width: 30%;
+  }
+
+  .hero-bg {
+    margin-bottom: 0;
+  }
+  section.description {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "grass content";
+  }
+
+  .right-column {
+    grid-area: content;
+    padding: 0 10%;
+    text-align: left;
+    align-self: center;
+  }
+  .img {
+    grid-area: bowl;
+  }
+}
+
+.top {
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY();
   }
 }
